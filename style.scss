@@ -1,0 +1,107 @@
+$Primary-100: hsl(25, 97%, 53%);
+
+$Neutral-100: hsl(0, 0%, 100%);
+$Neutral-200: hsl(216, 12%, 54%);
+$Neutral-300: hsl(217, 12%, 63%);
+$Neutral-400: hsl(213, 19%, 18%);
+$Neutral-500: hsl(216, 12%, 8%);
+
+h1 {
+  font-size: 1.3rem;
+  color: $Neutral-100;
+  margin-bottom: 0.3rem;
+}
+article {
+  background-color: $Neutral-400;
+  border-radius: 11px;
+  width: clamp(270px, 30vw, 320px);
+  padding: 1.4rem;
+}
+button {
+  background-color: $Primary-100;
+  border-radius: 17px;
+  border: none;
+  color: $Neutral-100;
+  height: 2.3rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  &:hover {
+    background-color: $Neutral-100;
+    color: $Primary-100;
+    cursor: pointer;
+  }
+}
+
+body {
+  background-color: $Neutral-500;
+  color: $Neutral-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
+  font-size: 0.8rem;
+}
+
+.rating {
+  display: block;
+}
+.img-wrapper {
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 50%;
+  height: 2.1rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 0.8rem;
+  }
+}
+.score {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 50%;
+    height: 2.2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    &:hover {
+      background-color: $Neutral-200;
+      color: $Neutral-100;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $Primary-100;
+      color: $Neutral-100;
+    }
+  }
+}
+.thanks {
+  display: none;
+  text-align: center;
+  img {
+    width: 55%;
+  }
+}
+.selected {
+  background-color: hsl(213, 19%, 25%);
+  color: $Primary-100;
+  border-radius: 14px;
+  width: 11rem;
+  margin: 0 auto;
+  p {
+    padding: 0.3rem 0.6rem;
+  }
+}
+.result {
+  padding-inline: 0.3rem;
+}
